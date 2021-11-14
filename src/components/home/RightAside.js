@@ -1,13 +1,15 @@
 import React from "react";
 import { nav } from "../Links";
+import people from '../../data/people.json'
 
 function RightAside() {
-  const { rightSearch, rightVideo, threedot, avater } = nav;
+  const { rightSearch, rightVideo, threedot } = nav;
   return (
     <div
       className="fixed w-3/12  px-1 mt-2  text-white right-0 overflow-y-scroll"
       style={{ height: "90vh" }}
     >
+      {/* static active bar  */}
       <div className="text-left flex justify-between items-center m-2 p-2 rounded-lg">
         <div>
           <p className="text-gray-400">Contact</p>
@@ -19,15 +21,19 @@ function RightAside() {
         </div>
       </div>
 
-      <div className="text-left m-2 p-2 flex items-center rounded-lg hover:bg-gray-900">
+    {/* dynamic user active status component */}
+    {people.map(({_id, name, avater})=>(
+      <div key={_id} className="text-left m-2 p-2 flex items-center rounded-lg hover:bg-gray-900">
         <img
           className="w-8 h-8 rounded-full relative mr-2"
           src={avater}
           alt="profile"
         />
         <div className="absolute bg-green-600 w-2 h-2 mx-6 mt-5 rounded-full"></div>
-        <p>Rahat</p>
+        <p>{name}</p>
       </div>
+    ))}
+      
     </div>
   );
 }

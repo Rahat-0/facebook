@@ -16,6 +16,12 @@ import video from "../assets/images/video_logo.png";
 import feeling from "../assets/images/feeling_logo.png";
 import threedot from "../assets/images/three-dot.svg";
 
+//story component image property here
+import rahatStory from "../assets/images/rahatStory.jpg";
+import badhonStory from "../assets/images/badhonStory.jpg";
+import rakibStory from "../assets/images/rakibStory.jpg";
+import riyadStory from "../assets/images/riyadStory.jpg";
+
 //left-Aside component image property here
 import leftFriend from "../assets/images/left-friend.png";
 import leftGroup from "../assets/images/left-groups.png";
@@ -52,6 +58,10 @@ export const nav = {
   video,
   feeling,
   threedot,
+  rahatStory,
+  badhonStory,
+  rakibStory,
+  riyadStory,
   leftFriend,
   leftGroup,
   leftJob,
