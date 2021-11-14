@@ -13,7 +13,7 @@ function PostText({text, img, dp}) {
     const date = new Date();
     const { avater, threedot } = nav;
     return (
-        <div className="text-left m-2 bg-gray-800 w-4/12 rounded-lg">
+        <div className="text-left m-2 bg-gray-800 sm:w-8/12 xl:w-4/12 w-full rounded-lg">
         <div className="flex items-center p-2  justify-between h-14">
           <div className="flex items-center">
             <img

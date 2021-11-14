@@ -4,7 +4,7 @@ import { nav } from "../Links";
 function StatusCard() {
   const { avater, image, video, feeling } = nav;
   return (
-    <div className="text-left p-2 m-3 bg-gray-800 w-4/12 rounded-lg">
+    <div className="text-left p-2 m-3 bg-gray-800 w-full sm:w-8/12 xl:w-4/12 rounded-lg">
       <div className="flex h-16 items-center p-2 space-x-2">
         <img className="h-10 w-10 rounded-full" src={avater} alt="rahat" />
         <input

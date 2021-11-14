@@ -5,7 +5,7 @@ function LeftAside() {
     const {avater} = nav;
   return (
     <div
-      className="w-3/12 px-1 mt-2 fixed text-white overflow-y-scroll"
+      className="w-3/12 px-1 mt-2 fixed text-white overflow-y-scroll hidden xl:block"
       style={{ height: "90vh" }}
     >
 

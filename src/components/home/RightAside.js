@@ -6,7 +6,7 @@ function RightAside() {
   const { rightSearch, rightVideo, threedot } = nav;
   return (
     <div
-      className="fixed w-3/12  px-1 mt-2  text-white right-0 overflow-y-scroll"
+      className="fixed w-3/12 hidden  px-1 mt-2 lg:block  text-white right-0 overflow-y-scroll"
       style={{ height: "90vh" }}
     >
       {/* static active bar  */}

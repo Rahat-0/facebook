@@ -6,7 +6,7 @@ function StoryCard() {
 
   const { avater} = nav;
   return (
-    <div className="text-left mt-6  w-5/12 rounded-lg flex space-x-2 overflow-x-hidden">
+    <div className="text-left mt-6 w-full sm:w-8/12 xl:w-5/12 rounded-lg flex space-x-2 overflow-x-hidden">
       {/* static story component here */}
       <div className="flex space-x-1">
         <div className="  w-28 h-52 bg-gray-800 rounded-xl">
@@ -19,7 +19,7 @@ function StoryCard() {
 
       {/* dynamic story component here */}
       {people.map(({story, name })=>(
-        <div className={`w-28 h-52 bg-gray-400 rounded-xl overflow-hidden ${ story ==="" ? "hidden" : "block"} `}  >
+        <div className={`   w-44 h-52  bg-gray-400 rounded-xl ${ story ==="" ? "hidden" : "block"} `}  >
         <div>
           <img className=" pt-6 h-40 w-full rounded-t-xl" src={story} alt="card" />
           <p className="text-center bg-transparent">{name}</p>

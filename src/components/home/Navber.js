@@ -17,7 +17,7 @@ function Navber() {
   } = nav;
   return (
     <>
-      <nav className="fixed flex w-full  p-2 bg-gray-900">
+      <nav className="fixed flex w-full justify-between  p-2 bg-gray-900">
         <ul className="flex w-3/12  space-x-2">
           <li>
             <a className="" href="##">
@@ -26,13 +26,13 @@ function Navber() {
           </li>
           <li>
             <input
-              className="rounded-3xl w-56 bg-gray-700 p-2 outline-none text-white"
+              className="rounded-3xl w-11 bg-gray-700 p-2 outline-none text-white xl:w-56 h-11 xl:rounded-full"
               type="search"
               placeholder="Search Facebook"
             />
           </li>
         </ul>
-        <ul className="flex w-6/12 justify-center items-center">
+        <ul className="lg:flex hidden w-6/12 justify-center items-center">
           <li className="hover:bg-gray-800 px-9 rounded py-1">
             <a href="##">
               <img className="w-8 h-8" src={home} alt="fb" />
@@ -59,10 +59,10 @@ function Navber() {
             </a>
           </li>
         </ul>
-        <ul className="flex w-3/12">
+        <ul className="flex lg:w-3/12">
           <li className="w-28">
             <a
-              className="flex items-center justify-center text-white"
+              className=" items-center justify-center text-white xl:flex hidden"
               href="##"
             >
               <img
