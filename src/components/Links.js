@@ -16,6 +16,24 @@ import video from "../assets/images/video_logo.png";
 import feeling from "../assets/images/feeling_logo.png";
 import threedot from "../assets/images/three-dot.svg";
 
+//left-Aside component image property here
+import leftFriend from "../assets/images/left-friend.png";
+import leftGroup from "../assets/images/left-groups.png";
+import leftJob from "../assets/images/left-jobs.png";
+import leftMemory from "../assets/images/left-mamory.png";
+import leftMarketplace from "../assets/images/left-marketplace.png";
+import leftPage from "../assets/images/left-page.png";
+import leftSaved from "../assets/images/left-saved.png";
+import leftWatch from "../assets/images/left-watch.png";
+import leftBlood from "../assets/images/left-bloodDonation.png";
+import leftCampus from "../assets/images/left-campus.png";
+import leftEvent from "../assets/images/left-event.png";
+import leftAdManager from "../assets/images/left-adManager.png";
+import leftAdCenter from "../assets/images/left-adCenter.png";
+
+// right-Aside component image property here
+import rightSearch from "../assets/images/search-solid.svg";
+import rightVideo from "../assets/images/video-solid.svg";
 export const nav = {
   home,
   account,
@@ -33,5 +51,20 @@ export const nav = {
   image,
   video,
   feeling,
-  threedot
+  threedot,
+  leftFriend,
+  leftGroup,
+  leftJob,
+  leftMemory,
+  leftMarketplace,
+  leftPage,
+  leftSaved,
+  leftWatch,
+  leftBlood,
+  leftCampus,
+  leftEvent,
+  leftAdManager,
+  leftAdCenter,
+  rightSearch,
+  rightVideo,
 };
