@@ -1,0 +1,22 @@
+/* ./src/index.css */
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+*{
+  box-sizing: border-box;
+}
+body {
+
+  font-family: 'Josefin Sans', cursive;
+}
+::-webkit-scrollbar{
+  width: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: gray;
+  border-radius: 10px;
+}
+
+

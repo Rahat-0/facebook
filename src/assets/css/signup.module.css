@@ -1,0 +1,36 @@
+.signupContainer{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(217, 235, 241);
+    height: 110vh;
+}
+.logoBody{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 300px;
+}
+
+/* form component start from here  */
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.formBody{
+    width: 450px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: gray  1px 2px 10px;
+}
+
+@media screen and (max-width : 600px) {
+    .formBody{
+        width: 90%;
+        height: fit-content;
+    }
+}
