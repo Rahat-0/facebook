@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { nav } from "../Links";
 
 function PostText({text, img, dp}) {
-    const [image, setImage] = useState('')
-    useEffect(() => {
-        if(img===undefined){
-            setImage("hidden")
-        }else{
-            setImage("block")
-        }
-    }, [img])
-    const date = new Date();
+    
+    const date = "11/16/2021, 2:37:14 PM";
     const { avater, threedot } = nav;
     return (
         <div className="text-left m-2 bg-gray-800 sm:w-8/12 xl:w-4/12 w-full rounded-lg">
@@ -40,7 +33,7 @@ function PostText({text, img, dp}) {
           <p className="px-2">
             {text}
           </p>
-          <img className={`w-full py-3 ${image}`} src={img} alt="img" />
+          <img className={`w-full py-3 ${img===undefined ? "hidden": "block"}`} src={img} alt="img" />
         </div>
       </div>
     )

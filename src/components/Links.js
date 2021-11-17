@@ -15,6 +15,7 @@ import image from "../assets/images/image_logo.png";
 import video from "../assets/images/video_logo.png";
 import feeling from "../assets/images/feeling_logo.png";
 import threedot from "../assets/images/three-dot.svg";
+import bars from "../assets/images/bars-solid.svg";
 
 //story component image property here
 import rahatStory from "../assets/images/rahatStory.jpg";
@@ -58,6 +59,7 @@ export const nav = {
   video,
   feeling,
   threedot,
+  bars,
   rahatStory,
   badhonStory,
   rakibStory,

@@ -18,14 +18,17 @@ function StoryCard() {
       </div>
 
       {/* dynamic story component here */}
+      <div className="flex space-x-1">
       {people.map(({story, name })=>(
-        <div className={`   w-44 h-52  bg-gray-400 rounded-xl ${ story ==="" ? "hidden" : "block"} `}  >
+        <div className={`   w-28 h-52  bg-gray-400 rounded-xl ${ !story ? "hidden" : "block"} `}  >
         <div>
           <img className=" pt-6 h-40 w-full rounded-t-xl" src={story} alt="card" />
           <p className="text-center bg-transparent">{name}</p>
         </div>
       </div>
       ))}
+      </div>
+      
       
     </div>
   );
