@@ -3,8 +3,10 @@ import { nav } from "../Links";
 
 function Navber(props) {
   const [toggle, setToggle] = useState(false)
-  const [, setlSide] = props.action;
+  const [msg, setmsg] = useState(false)
+  const [setlSide, setmessenger] = props.action;
   setlSide(toggle)
+  setmessenger(msg)
   const {
     home,
     account,
@@ -21,12 +23,12 @@ function Navber(props) {
   } = nav;
   return (
     <>
-      <nav className="fixed flex w-full justify-between  p-2 bg-gray-900">
-        <ul className="flex  space-x-2">
-          <li>
-            <a className="" href="##">
+      <nav className="fixed flex w-full p-2 bg-gray-900">
+        <ul className="flex md:space-x-2 w-5/12 lg:w-3/12  items-center">
+          <li className="w-12">
+            
               <img className="w-11 h-11" alt="fab" src={facebook}></img>
-            </a>
+           
           </li> 
           <li>
             <input
@@ -35,13 +37,13 @@ function Navber(props) {
               placeholder="Search Facebook"
             />
           </li>
-          <li onClick={()=> setToggle(!toggle)}>
+          <li onClick={()=> setToggle(!toggle)} className="w-11">
             <a className="block md:hidden" href="##">
-              <img className="w-10" alt="fab" src={bars}></img>
+              <img className="w-11 h-11" alt="fab" src={bars}></img>
             </a>
           </li> 
         </ul>
-        <ul className="lg:flex hidden justify-center items-center">
+        <ul className="lg:flex hidden justify-center lg:w-6/12 items-center">
           <li className="hover:bg-gray-800 px-9 rounded py-1">
             <a href="##">
               <img className="w-8 h-8" src={home} alt="fb" />
@@ -67,8 +69,8 @@ function Navber(props) {
               <img className="w-8 h-8" src={gaming} alt="fb" />
             </a>
           </li>
-        </ul>
-        <ul className="flex items-center">
+        </ul> 
+        <ul className="flex items-center space-x-1 lg:w-3/12  w-7/12">
           <li className="w-28">
             <a
               className=" items-center justify-center text-white xl:flex hidden"
@@ -91,7 +93,7 @@ function Navber(props) {
               />
             </a>
           </li>
-          <li className="w-12">
+          <li className="w-12" onClick={()=>setmsg(!msg)}>
             <a href="##">
               <img
                 className="w-9 h-9 p-2 rounded-full bg-gray-700"
