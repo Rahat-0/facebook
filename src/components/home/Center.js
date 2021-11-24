@@ -12,7 +12,6 @@ function Center() {
       <StoryCard />
       <StatusCard />
       <PostText text={text} dp={avater} />
-
       <PostText img={image} text={text} />
       
     </div>

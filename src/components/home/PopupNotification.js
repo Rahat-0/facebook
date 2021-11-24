@@ -1,21 +1,22 @@
-import React from "react";
+import React from 'react'
 import { nav } from "../Links";
 import people from "../../data/people.json";
-function PopupMessenger(props) {
-  const { threedot } = nav;
-  const [messenger] = props.action;
-  return ( 
-     <div
-    
+
+function PopupNotification(props) {
+    const { threedot } = nav;
+    const [notification] = props.action;
+    return (
+        <>
+        <div
       className={`fixed justify-center md:w-96 p-3 mt-1 mr-3 ${
-        messenger ? "block" : "hidden"
+        notification ? "block" : "hidden"
       }  rounded-b-lg bg-gray-900  text-white right-0 overflow-y-scroll`}
       style={{ height: "85vh" }}
     >
       {/* static active bar  */}
       <div className="text-left flex justify-between items-center rounded-lg">
         <div>
-          <p className="text-white text-3xl font-bold">Messenger</p>
+          <p className="text-white text-3xl font-bold">Notification</p>
         </div>
         <div className="flex justify-between w-32">
           <img
@@ -23,21 +24,8 @@ function PopupMessenger(props) {
             src={threedot}
             alt="threedot"
           />
-          <img
-            className="w-8 p-2 rounded-full hover:bg-gray-500"
-            src={threedot}
-            alt="threedot"
-          />
-          <img
-            className="w-8 p-2 rounded-full hover:bg-gray-500"
-            src={threedot}
-            alt="threedot"
-          />
-          <img
-            className="w-8 p-2 rounded-full hover:bg-gray-500"
-            src={threedot}
-            alt="threedot"
-          />
+          
+          
         </div>
       </div>
 
@@ -73,10 +61,9 @@ function PopupMessenger(props) {
           </div>
         </div>
       ))}
-       </div>
-     
-    
-  );
+      </div>
+      </>
+    )
 }
 
-export default PopupMessenger;
+export default PopupNotification;

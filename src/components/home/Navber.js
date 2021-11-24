@@ -4,9 +4,11 @@ import { nav } from "../Links";
 function Navber(props) {
   const [toggle, setToggle] = useState(false)
   const [msg, setmsg] = useState(false)
-  const [setlSide, setmessenger] = props.action;
+  const [notify, setnotify] = useState(false)
+  const [setlSide, setmessenger, setnotification] = props.action;
   setlSide(toggle)
   setmessenger(msg)
+  setnotification(notify)
   const {
     home,
     account,
@@ -93,7 +95,7 @@ function Navber(props) {
               />
             </a>
           </li>
-          <li className="w-12" onClick={()=>setmsg(!msg)}>
+          <li className="w-12" onClick={()=>setmsg(!msg , setnotify(false))}>
             <a href="##">
               <img
                 className="w-9 h-9 p-2 rounded-full bg-gray-700"
@@ -102,7 +104,7 @@ function Navber(props) {
               />
             </a>
           </li>
-          <li className="w-12">
+          <li className="w-12" onClick={()=>setnotify(!notify, setmsg(false))} >
             <a href="##">
               <img
                 className="w-9 h-9 p-2 rounded-full bg-gray-700"
